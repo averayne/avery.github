@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Avery's Homepage</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+</head>
+
+<body class="bg-gray-900">
+    <nav class="bg-gray-900 bg-opacity-70 backdrop-blur-sm text-black px-4 py-3 fixed top-0 w-full z-20 flex justify-between items-center shadow-lg">
+      <h1 class="text-xl font-bold tracking-wide">AveryMapped</h1>
+      <ul class="flex space-x-6 text-lg">
+        <li><a href="Website.html" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="Media.html" class="hover:text-blue-400 transition">Media</a></li>
+        <li><a href="Interests.html" class="hover:text-blue-400 transition">Interests</a></li>
+        <li><a href="Contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="flex-container relative z-10 pt-20">
+        <section class="header">
+        </section>
+        <h1 class="mt-2 text-3xl font-bold text-blue-700">Avery Stafford</h1>
+        <p class="mt-2 text-lg text-gray-600">Code. Creativity. Climb Higher.</p>
+        <hr>
+        <section class="content">
+            <p>Explore my projects, interests, and media content. I'm passionate about technology, logistics, and
+                creative engineering.</p>
+            <h2>About Me</h2>
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center my-8">
+                <div>
+                    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center my-8">
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-600 mb-2">Core Skills</h3>
+                            <p class="text-gray-200 mb-4">
+                                Here's a breakdown of my current strengths and tools I'm mastering—focused on building
+                                scalable, interactive tech.
+                            </p>
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-white">C / C#</label>
+                                    <div class="w-full bg-gray-700 rounded-full h-4">
+                                        <div class="bg-blue-500 h-4 rounded-full hover:bg-blue-600 transition-all duration-300"
+                                            style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-white">Git & Docker</label>
+                                    <div class="w-full bg-gray-700 rounded-full h-4">
+                                        <div class="bg-green-500 h-4 rounded-full hover:bg-green-600 transition-all duration-300"
+                                            style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-white">HTML & CSS</label>
+                                    <div class="w-full bg-gray-700 rounded-full h-4">
+                                        <div class="bg-yellow-500 h-4 rounded-full hover:bg-yellow-600 transition-all duration-300"
+                                            style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bg-gray-800 text-white p-4 rounded shadow">
+                                <h4 class="text-lg font-semibold mb-2">Projects Completed</h4>
+                                <p class="text-5xl font-bold text-green-400" id="counter">0</p>
+                                <script>
+                                    let count = 0;
+                                    const counter = document.getElementById("counter");
+                                    const interval = setInterval(() => {
+                                        if (count < 7) {
+                                            count++;
+                                            counter.textContent = count;
+                                        } else {
+                                            clearInterval(interval);
+                                        }
+                                    }, 300);
+                                </script>
+                            </div>
+                        </div>
+                    </section>
+                    <p class="mb-4 text-xl">
+                        Hey there! I'm Avery, a student at Atlas School specializing in logistics technology. My journey
+                        blends sharp coding skills with a drive to make systems smarter, smoother, and more human-friendly.
+                        Whether it's optimizing delivery routes, building interactive web experiences, or tackling real-world
+                        challenges through tech, I'm all about bridging the gap between complexity and clarity.
+                    </p>
+                    <p class="mb-4 text-xl">
+                        I'm especially passionate about designing tools and solutions that don't just function well, but feel
+                        intuitive to use. I believe technology should empower people, not overwhelm them. From collaborative
+                        development using Git and Docker to experimenting with creative UI/UX elements in web projects, I'm
+                        constantly learning, refining, and pushing boundaries.
+                    </p>
+                </div>
+                <div>
+                    <img src="portrait.jpg" alt="Avery Stafford portrait or relevant image"
+                        class="rounded-lg shadow-lg max-w-xs w-full mx-auto">
+                </div>
+            </section>
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center my-8">
+                <div class="order-2 md:order-1">
+                    <img src="tulsa.jpg" alt="Avery in action or hobby" class="rounded-lg shadow-lg max-w-xs w-full mx-auto">
+                </div>
+                <div class="order-1 md:order-2">
+                    <p class="mb-4 text-lg">
+                        Logistics isn't just data and maps—it's the heartbeat of how we move, connect, and thrive. My
+                        goal is to engineer systems that make life easier for professionals on the road, adventurers on
+                        the rock, and anyone navigating a fast-paced world. If you're into coding, creativity, and
+                        community-driven tech, you're in the right place.
+                    </p>
+                </div>
+            </section>
+            <section class="projects">
+                <h2>My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-black rounded shadow p-4">
+                        <h3 class="font-bold text-lg mb-2">Hangman Game Engine</h3>
+                        <a href="Hangman.cs" class="text-blue-600 hover:underline">View Project</a>
+                    </div>
+                    <div class="bg-black rounded shadow p-4">
+                        <h3 class="font-bold text-lg mb-2">RPG Inventory System</h3>
+                        <a href="#project2" class="text-blue-600 hover:underline">View Project</a>
+                    </div>
+                </div>
+                <h2>Project Visions</h2>
+                <p>I'm working toward solutions that improve real lives through smart tech and empathetic design:</p>
+                <section class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center my-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">Wellness Routes for Truck Drivers</h3>
+                        <p class="text-gray-200">
+                            This app supports drivers by recommending healthy food stops, wellness zones, and rest
+                            areas. It's tech with heart—making long-haul life a little easier and a lot more human.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="truck.jpg" alt="Truck wellness route preview" class="rounded-lg shadow-lg">
+                    </div>
+                </section>
+                <section class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center my-8">
+                    <div class="order-2 md:order-1">
+                        <img src="climber.jpg" alt="ClimbHigher app concept" class="rounded-lg shadow-lg">
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">ClimbHigher</h3>
+                        <p class="text-gray-200">
+                            Like a social climb-log, ClimbHigher helps rock climbers record ascents, share routes, and
+                            connect with a community of explorers who thrive outdoors and online.
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
